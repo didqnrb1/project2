@@ -3,13 +3,11 @@
 <head>
 
 
- 
-
 
 <style>/* Stylesheet 2: */
 body {
     font-family: Arial;
-    background-color: #d14836;
+    background-color: #863429;
     line-height: 20px;
 }
 
@@ -24,8 +22,8 @@ body {
 
 #top {
     color: #ffffff;
-    padding: 15px;
-    font-size: 30px;
+    padding: 15x;
+    font-size: 32px;
     line-height: 26px;    
 }
 
@@ -86,10 +84,6 @@ body {
    font-weight:bold;
 }
 
-.menuitem:hover {
-    background-color: #ffffff;
-    color: #d14836;
-}
 
 a {
     color: #d14836;
@@ -116,8 +110,8 @@ a:hover {
     <div class ="wrapper">
         <div id ="menubar">
             <ul id="menulist">
-                     <li class="menuitem" onclick="reStyle(0)">Stylesheet 1</li>
-                    <li class="menuitem" onclick="reStyle(1)">Stylesheet 2</li>
+                    <li class="menuitem" onclick="reStyle(1)">Stylesheet 1</li>
+                    <li class="menuitem" onclick="reStyle(0)">Stylesheet 2</li>
                     <li class="menuitem" onclick="reStyle(2)">Stylesheet 3</li>
                     <li class="menuitem" onclick="reStyle(3)">Stylesheet 4</li>
                     <li class="menuitem" onclick="noStyles()">No Stylesheet</li>
@@ -127,8 +121,8 @@ a:hover {
     <div id = "main">
     <h1>Same Page Different Stylesheets</h1>
     <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-        <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
-        <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
+        <a href="#" onclick="reStyle(1);return false">Stylesheet1</a>,
+        <a href="#" onclick="reStyle(0);return false">Stylesheet2</a>,
         <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
         <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
     </p>
