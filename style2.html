@@ -5,94 +5,107 @@
 
 
 <style>/* Stylesheet 2: */
-body {
-    font-family: Arial;
-    background-color: #863429;
-    line-height: 20px;
+
+body{
+    font : 100% Lucida;
+    margin : top 0px, 20px;
+    line-height: 10x;
+    background-color: rgb(187, 95, 95);
 }
 
-.container {
+.container{
     min-width: 900px;
 }
 
-.wrapper {
-    position: relative;
-    overflow: auto;
+.wrapper{
+    position : relative;
+    overflow : hidden;
+    margin-left : 5px
 }
 
-#top {
-    color: #ffffff;
-    padding: 15x;
-    font-size: 32px;
-    line-height: 26px;    
+#sideBar{
+margin-left : 5px;
+background-color: gray;
+
 }
 
-#top h1 {
-    margin:0;
-    line-height: 50px;
+#top{
+    border-radius : 2px;
+    margin-left : 4px;
+    color : white;
+    font-size : 30px;
+    padding : 15px;
 }
 
-#menubar {
-    width: 190px;
-    float: right;
+#top h1{
+    margin : 0;
+    margin-bottom: 20px;
 }
 
-#main {
-    padding: 10px;
-    background-color: #ffffff;
-    font: 80% Verdana;
+#top p{
+    margin : 0;
+    margin-bottom: 35px;
+}
+
+#menubar{
+    width :200px;
+    float : right;
+    margin-top : 5px;
+
+}
+
+#main{
+background-color: white;
+padding : 10px;
+height : 300px;
 }
 
 #main h1, #main h2 {
-    color: #d14836;
+color : rgb(241, 62, 62);
 }
 
-#sidebar {
-    background-color: #F6DAD7;
-    color: #d14836;
-    padding: 10px;
+#menulist{
+    margin : 0;
+    padding : 0;
 }
-
-#bottom {
-    text-align: center;
-    padding: 10px;
-    font-size: 70%;
-    color: #ffffff;
-}
-
-#menulist {
-    padding:0;
-    font: 16px verdana;
-}
-
-.menuitem {
-    width: 155px;
-    background-color: #d14836;
-    border: 1px solid #d14836;
-    border-radius: 40px;
-    color: #ffffff;
-    list-style-type: none;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.menuitem:nth-child(2) {
-   background-color:white;
-   color: #d14836;
-   font-weight:bold;
+.menuitem{
+width : 200px;
+color:white;
+font-size : 18px;
+margin : 4px;
+padding : 13px;
+border-radius: 25px;
+list-style-type: none;
+background-color: rgb(187, 95, 95);
+text-align: center;
+cursor : pointer;
+border : 1px solid ;
+margin-left : -30px;
+font-weight: bold;
 }
 
 
-a {
-    color: #d14836;
-    text-decoration: none;
+#sidebar{
+background-color: rgb(252, 189, 189);
+font-size : 15px;
+color :rgb(199, 55, 55);
+height : 100px;
+margin-top :-20px;
+padding : 10px;
+}
+#bottom{
+text-align: center;
+color : white;
+padding : 10px;
+font-size: 80%;
 }
 
-a:hover {
-    text-decoration: underline;
+a{
+    color:rgb(252, 189, 189);
+    text-decoration: none; 
 }
+
+
 </style>
 
 
@@ -120,7 +133,9 @@ a:hover {
         
     <div id = "main">
     <h1>Same Page Different Stylesheets</h1>
-    <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+    <p>This is a demonstration of how different stylesheets can change the layout of 
+        your HTML page. You can change the layout of this page by selecting different 
+        stylesheets in the menu, or by selecting one of the following links:<br>
         <a href="#" onclick="reStyle(1);return false">Stylesheet1</a>,
         <a href="#" onclick="reStyle(0);return false">Stylesheet2</a>,
         <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
@@ -138,12 +153,7 @@ a:hover {
 
 
 <div id ="bottom">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
-aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
-ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
-vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
-qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 </div>
 </div>
 

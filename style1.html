@@ -5,9 +5,9 @@
 
     <style>
     body{
-        font : 100% Lucida Sans, Verdana;
+        font : 100% Lucida, Verdana;
         margin : 20px;
-        line-height : 26px;
+        line-height : 40px;
     }
 
     .container{
@@ -25,7 +25,7 @@
     }
 
     #top{
-        background-color : #04AA6D;
+        background-color : #5148d6;
         color : #ffffff;
         padding : 15px;
     }
@@ -44,7 +44,7 @@
     }
 
     #sidebar{
-        background-color : #32a4e7;
+        background-color : #4aecc4;
         color : #ffffff;
         padding : 10px;
         width : 180px;
@@ -77,44 +77,13 @@
         cursor : pointer;
     }
 
-    .menuitem:hover{
-        background-color : #ffffff;
-    }
-
-    .menuitem:first-child{
-        background-color : #04AA6D;
-        color : white;
-        font-weight:bold;
-    }
 
     a{
         color: #000000;
         text-decoration : underline;
     }
 
-    a:hover{
-        text-decoration : none;
-    }
-
-    @media (max-width : 800px){
-        #sidebar{
-            width : auto;
-            position : relative;
-        }
-        #main{
-            margin-right:0;
-            
-        }
-    }
-    @media(max-width : 600px){
-        #menubar{
-            width : auto;
-            float : none;
-        }
-        #main{
-            margin : 0;
-        }
-    }
+    
 
 </style>
 
@@ -146,7 +115,7 @@
         <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
         <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
         <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
-        <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
+        <a href="#" onclick="reStyle(3);return false">Stylesheet</a>.
     </p>
     <h2>No Styles</h2>
     <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
