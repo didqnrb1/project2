@@ -127,6 +127,8 @@
         <h1>Welcome to 22200429`s Homepage</h1>
         <p>Use to menu to select  different Stylesheets</p>
     </div>
+
+
     <div class ="wrapper">
         <div id ="menubar">
             <ul id="menulist">
@@ -142,7 +144,9 @@
     <h1>Same Page Different Stylesheets</h1>
     <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
         <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
-      
+        <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
+        <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
+        <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
     </p>
     <h2>No Styles</h2>
     <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
@@ -177,29 +181,7 @@ qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla f
     document.styleSheets[n].disabled = false;
 }
 
-function closeBlackdiv() {
-    var blackdiv = document.getElementById("blackdiv");
-    var stylediv = document.getElementById("stylediv");
-    blackdiv.parentNode.removeChild(blackdiv);
-    stylediv.parentNode.removeChild(stylediv);
-}
 
-
-function showStyle(n){
-    var div, text, blackdiv;
-blackdiv = document.createElement("DIV");
-blackdiv.setAttribute("style","background-color:#000000;position:absolute;width:100%;height:100%;top:0;opacity:0.5;margin-left:-20px;");
-blackdiv.setAttribute("id","blackdiv");
-blackdiv.setAttribute("onclick","closeBlackdiv()");
-document.body.appendChild(blackdiv);
-div = document.createElement("DIV");
-div.setAttribute("id","stylediv");
-div.setAttribute("style","background-color:#ffffff;padding-left:5px;position:absolute;width:auto;height:auto;top:100px;bottom:50px;left:200px;right:200px;overflow:auto;font-family: monospace; white-space: pre;line-height:16px;");
-text = document.createTextNode(document.getElementsByTagName("STYLE")[n].innerHTML);
-div.appendChild(text);
-document.body.appendChild(div)
-}
-reStyle(0);
 </script>
 
 </body>
